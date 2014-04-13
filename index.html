@@ -1,72 +1,382 @@
-<!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Openagency.cz by openagency</title>
+<!DOCTYPE html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <title>OpenAgency s.r.o.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Openagency.cz</h1>
-        <p>Home page of Open Agency s.r.o.</p>
 
-        <p class="view"><a href="https://github.com/openagency/openagency.cz">View the Project on GitHub <small>openagency/openagency.cz</small></a></p>
+    <!-- CSS code from Bootply.com editor -->
+
+    <style type="text/css">
+        /* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
 
 
-        <ul>
-          <li><a href="https://github.com/openagency/openagency.cz/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/openagency/openagency.cz/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/openagency/openagency.cz">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+/* MARKETING CONTENT
+-------------------------------------------------- */
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/openagency">openagency</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remve the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+
+  </style>
+</head>
+
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        <div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-br  and" href="#">
+          <img src="logo.jpg" style="height: 22px; display: inline;"> Open Agency
+        </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#team">Nas tym</a></li>
+            <li><a href="https://www.facebook.com/openagency.cz"><i class="icon-white fa fa-facebook"></i> openagency.cz</a></li>
+            <li><a href="https://twitter.com/openagency_cz"><i class="icon-white fa fa-twitter"></i> openagency_cz</a></li>
+          </ul>
+        </div>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://www.nemcinaprocestovniruch.cz/static/img/qr-phone.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Bootstrap 3 Carousel Layout</h1>
+          <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
+          <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
+        </p></pthis></div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://www.nemcinaprocestovniruch.cz/static/img/macbook.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Changes to the Grid</h1>
+          <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
+          <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1500X500" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Percentage-based sizing</h1>
+          <p>With "mobile-first" there is now only one percentage-based grid.</p>
+          <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-8 text-center">
+        <div class="row">
+        <div class="col-md-4 text-center">
+          <img class="img-thumbnail" src="http://openagency.cz/files/en-st-mini.png">
+          <h3>Anglictina pro strojare</h3>
+          <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+          <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Prihlaseni »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>One Fluid Grid</h2>
+          <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+          <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Mobile-first</h2>
+          <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+          <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a class="twitter-timeline" href="https://twitter.com/openagency_cz" data-widget-id="455053168536064000">Tweets by @openagency_cz</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div><!-- /.row -->
+
+
+
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
+    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+<!-- START THE FEATURETTES -->
+
+  
+  <h2 id="team">Team</h3>
+  <hr class="featurette-divider">
+<!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
+      <h2>Jitka Kuncarova</h2>
+      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncar-open-agency.jpg">
+      <h2>Jiri Kuncar</h2>
+      <p>Motivovaný programátor, který stojí za vznikem aplikace OPEN LEARNING pro online podporu vzdělávání. V současné době působí v CERNu ve Švýcarsku. Vystudoval Univerzitu Karlovu a softwarové inženýrství na Mälardalens högskola ve Švédsku. Spolupracoval jako programátor se společnostmi Anvio.cz, TDO s.r.o., Red Hat.</p>
+      <p><a class="btn btn-default" href="mailto:jiri.kuncar@openagency.cz">Kontaktujte me</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
+      <h2>Jitka Kuncarova</h2>
+      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
+      <h2>Jitka Kuncarova</h2>
+      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
+      <h2>Jitka Kuncarova</h2>
+      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+    </div>
+  </div><!-- /.row -->
+
+  <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+  </footer>
+
+</div><!-- /.container -->
+        
+        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            
+        
+        });
+        
+        </script>
+        <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -75,7 +385,6 @@ $ git checkout gh-pages
               var pageTracker = _gat._getTracker("UA-43333241-1");
             pageTracker._trackPageview();
             } catch(err) {}
-          </script>
-
-  </body>
+        </script>    
+    </body>
 </html>
