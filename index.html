@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,200,100" rel="stylesheet" type="text/css">
 
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,9 +20,17 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
 
+.lead {
+  font-weight: 300;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -35,6 +44,9 @@ body {
   z-index: 10;
 }
 
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -150,34 +162,57 @@ body {
 
   </style>
 </head>
-
-    <!-- HTML code from Bootply.com editor -->
-    
-    <body  >
-        
-        <div class="navbar-wrapper">
-  <div class="container">
-    <div class="navbar navbar-inverse navbar-static-top">
-      
+<body>
+  <!-- top navigation bar -->
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-default navbar-static-top">
         <div class="navbar-header">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </a>
-        <a class="navbar-br  and" href="#">
-          <img src="logo.jpg" style="height: 22px; display: inline;"> Open Agency
-        </a>
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="static/img/logo.jpg" style="height: 22px; display: inline;"> Open Agency
+          </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#team">Nas tym</a></li>
-            <li><a href="https://www.facebook.com/openagency.cz"><i class="icon-white fa fa-facebook"></i> openagency.cz</a></li>
-            <li><a href="https://twitter.com/openagency_cz"><i class="icon-white fa fa-twitter"></i> openagency_cz</a></li>
+            <li>
+              <a href="#openlearning">
+                <i class="fa fa-arrow-circle-right"></i> Open Learning
+              </a>
+            </li>
+            <li>
+              <a href="#projekty">
+                <i class="fa fa-folder-open"></i> Projekty
+              </a>
+            </li>
+            <li>
+              <a href="#team">
+                <i class="fa fa-users"></i> Náš tým
+              </a>
+            </li>
+            <li>
+              <a href="#kontakt">
+                <i class="fa fa-envelope-o"></i> Kontakt
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a href="https://www.facebook.com/openagency.cz">
+                <i class="fa fa-facebook"></i> openagency.cz
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/openagency_cz">
+                <i class="fa fa-twitter"></i> openagency_cz
+              </a>
+            </li>
           </ul>
         </div>
-
     </div>
   </div><!-- /container -->
 </div><!-- /navbar wrapper -->
@@ -194,7 +229,7 @@ body {
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://www.nemcinaprocestovniruch.cz/static/img/qr-phone.jpg" class="img-responsive">
+      <img src="static/img/ipad.jpeg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
           <h1>Bootstrap 3 Carousel Layout</h1>
@@ -204,7 +239,7 @@ body {
       </div>
     </div>
     <div class="item">
-      <img src="http://www.nemcinaprocestovniruch.cz/static/img/macbook.jpg" class="img-responsive">
+      <img src="static/img/macbook.jpeg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
           <h1>Changes to the Grid</h1>
@@ -214,7 +249,7 @@ body {
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1500X500" class="img-responsive">
+      <img src="static/img/book.jpeg">
       <div class="container">
         <div class="carousel-caption">
           <h1>Percentage-based sizing</h1>
@@ -302,32 +337,81 @@ body {
   </div>
 
   <hr class="featurette-divider">
-
-  <!-- /END THE FEATURETTES -->
-<!-- START THE FEATURETTES -->
-
   
-  <h2 id="team">Team</h3>
-  <hr class="featurette-divider">
+  <div class="page-header">
+    <h2 id="projekty">
+      <i class="fa fa-folder-open"></i> Projekty
+    </h2>
+  </div>
+  
+  <div class="row">
+    <!-- Nav tabs -->
+    <ul class="nav nav-stacked col-md-4">
+      <li class="active">
+        <a href="#projekt_CZ_1_07_3_2_08_03_0004" data-toggle="tab">CZ.1.07/3.2.08/03.0004</a>
+      </li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
+      <li><a href="#messages" data-toggle="tab">Messages</a></li>
+      <li><a href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content col-md-8">
+      <!-- Tab JHK -->
+      <div class="tab-pane active" id="projekt_CZ_1_07_3_2_08_03_0004">
+        <div style="max-width: 600px; text-align: center;">
+          <img style="width:100%;" src="static/img/project-logo.png" alt="projekt">
+        </div>
+        <div class="caption">
+          <h3>
+            Regionální partnerství pro výuku odborných cizích jazyků podle potřeb podniků v Jihočeském kraji
+            <small>CZ.1.07/3.2.08/03.0004</small>
+          </h3>
+          <p class="lead">
+            <a href="http://www.openagency.cz">OPEN AGENCY s.r.o.</a> realizuje od 1. ledna 2013 projekt Regionální partnerství pro výuku odborných cizích jazyků podle potřeb podniků v Jihočeském kraji. Projekt patří do prioritní osy 3 Další vzdělávání, oblasti podpory 3.2 Podpora nabídky dalšího vzdělávání.
+          </p>
+        </div>
+      </div>
+      <div class="tab-pane" id="profile">...</div>
+      <div class="tab-pane" id="messages">...</div>
+      <div class="tab-pane" id="settings">...</div>
+    </div>
+  </div>
+  <!-- /END THE FEATURETTES -->
+
+<!-- START THE TEAM -->
+  <div class="page-header">
+    <h2 id="team">
+      <i class="fa fa-users"></i> Team
+    </h2>
+  </div>
+  <p class="lead">
+    Jak přemýšlíme o budoucnosti jazykového vzdělávání? Digitálně sebejistý lektor a učitel věří, že moderní technologie mohou vhodně doplnit a zefektivnit výuku i učení cizím jazykům a že mají v jazykovém vzdělávání svůj smysl.
+    Lektor a učitel jsou a budou ve výuce nezastupitelní, změněný způsob zacházení s informacemi však vyžaduje změnu jejich role v poradce a motivátory.
+  </p>
+  
 <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
+      <img class="img-circle" src="static/img/kuncarova.jpg">
       <h2>Jitka Kuncarova</h2>
       <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
-      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncar-open-agency.jpg">
-      <h2>Jiri Kuncar</h2>
+      <img class="img-circle" src="static/img/kuncar.jpg">
+      <h2>
+        Jiri Kuncar<br/>
+        <small>jednatel společnosti, programátor</small>
+      </h2>
       <p>Motivovaný programátor, který stojí za vznikem aplikace OPEN LEARNING pro online podporu vzdělávání. V současné době působí v CERNu ve Švýcarsku. Vystudoval Univerzitu Karlovu a softwarové inženýrství na Mälardalens högskola ve Švédsku. Spolupracoval jako programátor se společnostmi Anvio.cz, TDO s.r.o., Red Hat.</p>
-      <p><a class="btn btn-default" href="mailto:jiri.kuncar@openagency.cz">Kontaktujte me</a></p>
+      <p><a class="btn btn-default" href="mailto:jiri.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
-      <h2>Jitka Kuncarova</h2>
-      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
-      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+      <img class="img-circle" src="static/img/zdenekkuncar.jpg">
+      <h2>Zdenek Kuncar</h2>
+      <p>Student Vysokého učení technického v Brně. Podílí se na vytváření audiovizuálních materiálů pro studenty odborné angličtiny. Své technické znalosti uplatňuje při poskytování online podpory uživatelům <a href="#openlearning">OPEN LEARNING</a>.</p>
+      <p><a class="btn btn-default" href="mailto:zdenek.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
     </div>
   </div>
   <div class="row">
@@ -349,42 +433,84 @@ body {
 
   <!-- FOOTER -->
   <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+    <div class="container">    
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li>GitHub<li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact & support</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">Site status</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li>Applications<li>
+          <li><a href="#">Product for Mac</a></li>
+          <li><a href="#">Product for Windows</a></li>
+          <li><a href="#">Product for Eclipse</a></li>
+          <li><a href="#">Product mobile apps</a></li>              
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li>Services<li>
+          <li><a href="#">Web analytics</a></li>
+          <li><a href="#">Presentations</a></li>
+          <li><a href="#">Code snippets</a></li>
+          <li><a href="#">Job board</a></li>              
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li>Documentation<li>
+          <li><a href="#">Product Help</a></li>
+          <li><a href="#">Developer API</a></li>
+          <li><a href="#">Product Markdown</a></li>
+          <li><a href="#">Product Pages</a></li>              
+        </ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-8">
+        <a href="#">Terms of Service</a>    
+        <a href="#">Privacy</a>    
+        <a href="#">Security</a>
+      </div>
+      <div class="col-md-4">
+        <p class="muted pull-right">© 2013 Company Name. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <p class="pull-right"><a href="#">Zpět</a></p>
+    <p><a href="http://www.openagency.cz">openagency.cz</a></p>
   </footer>
 
 </div><!-- /.container -->
         
-        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-
-        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-
-
-
-
-        
-        <!-- JavaScript jQuery code from Bootply.com editor -->
-        
-        <script type='text/javascript'>
-        
-        $(document).ready(function() {
-        
-            
-        
-        });
-        
-        </script>
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-43333241-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-        </script>    
-    </body>
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        //alert('Done');    
+      });
+    </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-43333241-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>       
+  </body>
 </html>
