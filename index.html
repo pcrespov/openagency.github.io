@@ -28,6 +28,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+
 .lead {
   font-weight: 300;
 }
@@ -48,6 +49,10 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.navbar-brand {
+  letter-spacing: -1px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -59,6 +64,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* Declare heights because of positioning of img element */
@@ -174,7 +180,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
             <span class="icon-bar"></span>
           </a>
           <a class="navbar-brand" href="#">
-            <img src="static/img/logo.jpg" style="height: 22px; display: inline;"> Open Agency
+            <img src="static/img/logo.png" style="height: 22px; display: inline;"> Open Agency
           </a>
         </div>
         <div class="navbar-collapse collapse">
@@ -188,6 +194,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
               <a href="#projekty">
                 <i class="fa fa-folder-open"></i> Projekty
               </a>
+        
             </li>
             <li>
               <a href="#team">
@@ -232,10 +239,10 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       <img src="static/img/ipad.jpeg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Bootstrap 3 Carousel Layout</h1>
-          <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
-          <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-        </p></pthis></div>
+          <h1>Provázanost s praxí</h1>
+          <p>Vytvořeno ve spolupráci s odborníky v podnicích.</p>
+          <p><a class="btn btn-large btn-primary" href="#provazanost-s-praxi">Zobrazit více</a></p>
+        </div>
       </div>
     </div>
     <div class="item">
@@ -306,34 +313,39 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     </div>
   </div><!-- /.row -->
 
-
-
-
-
   <!-- START THE FEATURETTES -->
 
   <hr class="featurette-divider">
 
-  <div class="featurette">
+  <div id="provazanost-s-praxi" class="featurette">
     <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+    <h2 class="featurette-heading">Provázanost s praxí <span class="text-muted">vychází vstříc podnikům.</span></h2>
+    <p class="lead">
+      <i class="fa fa-hand-o-right"></i> ústní a písemné úkoly vycházející z reálných potřeb praxe
+    </p>
   </div>
 
   <hr class="featurette-divider">
 
-  <div class="featurette">
+  <div id="online-pracovni-sesit" class="featurette">
     <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+    <h2 class="featurette-heading">Online pracovní sešit <span class="text-muted">poskytuje zpětnou vazbu.</span></h2>
+    <p class="lead">
+      <i class="fa fa-hand-o-right"></i> okamžité vyhodnocení cvičení a testů v online pracovním sešitě<br/>
+      <i class="fa fa-hand-o-right"></i> přehlednost a dostupnost výsledků pro studenta i jeho lektora
+    </p>
   </div>
 
   <hr class="featurette-divider">
 
   <div class="featurette">
     <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+    <h2 class="featurette-heading">Modulová kniha pro studenty. <span class="text-muted">PŘEHLEDNOST. ODBORNOST.</span></h2>
+    <p class="lead">
+      <i class="fa fa-hand-o-right"></i> systematicky strukturované lekce v učebnici<br/>
+      <i class="fa fa-hand-o-right"></i> třicet odborných termínů v každé lekci<br/>
+      <i class="fa fa-hand-o-right"></i> výukové materiály s odbornými texty vytvořené ve spolupráci s odborníky a prověřené rodilými mluvčími
+    </p>
   </div>
 
   <hr class="featurette-divider">
@@ -394,41 +406,73 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   <div class="row">
     <div class="col-md-4 text-center">
       <img class="img-circle" src="static/img/kuncarova.jpg">
-      <h2>Jitka Kuncarova</h2>
+      <h2>
+        Jitka Kunčarová<br/>
+        <small>jednatelka společnosti</small>
+      </h2>
       <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
-      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
+      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte mě</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="static/img/kuncar.jpg">
       <h2>
-        Jiri Kuncar<br/>
+        Jiří Kunčar<br/>
         <small>jednatel společnosti, programátor</small>
       </h2>
       <p>Motivovaný programátor, který stojí za vznikem aplikace OPEN LEARNING pro online podporu vzdělávání. V současné době působí v CERNu ve Švýcarsku. Vystudoval Univerzitu Karlovu a softwarové inženýrství na Mälardalens högskola ve Švédsku. Spolupracoval jako programátor se společnostmi Anvio.cz, TDO s.r.o., Red Hat.</p>
-      <p><a class="btn btn-default" href="mailto:jiri.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
+      <p><a class="btn btn-default" href="mailto:jiri.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte mě</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="static/img/zdenekkuncar.jpg">
-      <h2>Zdenek Kuncar</h2>
-      <p>Student Vysokého učení technického v Brně. Podílí se na vytváření audiovizuálních materiálů pro studenty odborné angličtiny. Své technické znalosti uplatňuje při poskytování online podpory uživatelům <a href="#openlearning">OPEN LEARNING</a>.</p>
-      <p><a class="btn btn-default" href="mailto:zdenek.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte me</a></p>
+      <img class="img-circle" src="static/img/oleksikova.jpg">
+      <h2>
+        Kateřina Oleksíková<br/>
+        <small>metodička výuky cizích jazyků</small>
+      </h2>
+      <p>Aktivní překladatelka a tlumočnice využívá své dlouholeté zkušenosti s německým jazykem ve vzdělávání dospělých. Při výuce jazyka se řídí heslem: Mozek je sval jako každý jiný, je třeba ho trénovat - pak se výsledky dostaví. Díky svému systematickému a pozitivnímu přístupu a schopnosti domluvit se (nejen v cizím jazyce) nemá problém spolupracovat v týmu různorodých lidí. Ráda pracuje na projektech, které mají smysl. Má na starosti metodiku výukových modulů a metodické vedení lektorů. Vystudovala germanistiku a historii na Filozofické fakultě v Olomouci.</p>
+      <p><a class="btn btn-default" href="mailto:oleksikova@openagency.cz">Kontaktujte mě</a></p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
-      <h2>Jitka Kuncarova</h2>
-      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenturu a divizi celoživotního vzdělávání na VŠP a.s. v Ostravě. Chce dělat jen to, co má smysl a vede k cíli. Ráda pracuje s motivovanými lidmi, kterým nevadí, že vidí dopředu. Dává řád a smysl vytvářeným souborům výukových materiálů k modulům odborné angličtiny, připravuje a řídí projekty ESF. Byla zapojena do řady mezinárodních projektů, absolvovala zahraniční stáže a studijní pobyty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
-      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+      <img class="img-circle" src="static/img/martinkova.jpg">
+      <h2>
+        Simona Martínková<br/>
+        <small>lektorka</small>
+      </h2>
+      <p>Má bohaté zkušenosti s uplatňováním moderních vyučovacích metod v oblasti výuky cizích jazyků ve školách i vzdělávání dospělých. Je pozitivní, umí zaujmout a přesvědčit, má vynikající komunikační dovednosti v českém, anglickém a francouzském jazyce. Je autorkou prvních výukových materiálů k modulu Základní chemická terminologie. Vystudovala Pedagogickou fakultu v Olomouci a Filozoficko-přírodovědeckou fakultu v Opavě. Učila na vysoké i na základní škole.</p>
+      <p><a class="btn btn-default" href="mailto:simona.martinkova1@gmail.com">Kontaktujte mě</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://openagency.cz/o_nas/files/kuncarova-open-agency.jpg">
-      <h2>Jitka Kuncarova</h2>
-      <p>Kreativní manažerka se zkušenostmi z veřejného i soukromého školství, působila na střední i vysoké škole, řídila jazykovou agenty k různým oblastem vzdělávání. Publikuje v oblasti kvality vzdělávání.</p>
-      <p><a class="btn btn-default" href="mailto:jitka.kuncarova@openagency.cz">Kontaktujte me</a></p>
+      <img class="img-circle" src="static/img/slaninova.jpg">
+      <h2>
+        Kateřina Slaninová<br/>
+        <small>autorka vzdělávacích materiálů, lektorka
+        </small>
+      </h2>
+      <p>Jako autorka výukových materiálů v angličtině a němčině pro obory chemie, strojírenská technologie a cestovní ruch se podílí na práci OPEN AGENCY již několik let. Aktivní lektorka a školitelka učitelů a lektorů je přesvědčena o smyslu použití metody OPEN LEARNING. Učí celou škálu studentů od střední školy, vysoké školy, firem a z řad učitelů. Studovala na Slezské univerzitě v Opavě, na Technische Universität v Drážďanech a na Philipps-Universität v Marburgu, kde se věnovala angličtině i němčině. Absolovala několik dalších metodických pobytů v zahraničí, hlavně v Anglii a v Německu. Je přesvědčena o tom, že každý učitel jazyků se musí dál vzdělávat a zdokonalovat v jazycích.</p>
+      <p><a class="btn btn-default" href="mailto:slaninova@openagency.cz">Kontaktujte mě</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="static/img/zdenekkuncar.jpg">
+      <h2>
+        Zdeněk Kunčar<br/>
+        <small>onile podpora</small>
+      </h2>
+      <p>Student Vysokého učení technického v Brně. Podílí se na vytváření audiovizuálních materiálů pro studenty odborné angličtiny. Své technické znalosti uplatňuje při poskytování online podpory uživatelům <a href="#openlearning">OPEN LEARNING</a>.</p>
+      <p><a class="btn btn-default" href="mailto:zdenek.kuncar@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte mě</a></p>
     </div>
   </div><!-- /.row -->
-
+<div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="static/img/kosa.jpg">
+      <h2>
+        Peter Kóša<br/>
+        <small>pracovní síla z východu</small>
+      </h2>
+      <p>Student posledního ročníku MFF UK v Praze. Programuje v kdejakém jazyce, který mu zadají, aktuálně například v PHP. Až bude velký, rád by se odstěhoval do Švýcarska nebo Itálie, protože v Praze je mu zima.</p>
+      <p><a class="btn btn-default" href="mailto:support@openagency.cz"><i class="glyphicon glyphicon-envelope"></i> Kontaktujte mě</a></p>
+    </div>
+  </div>
   <hr class="featurette-divider">
 
   <!-- FOOTER -->
