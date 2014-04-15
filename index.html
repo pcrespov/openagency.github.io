@@ -1,7 +1,8 @@
 <html lang="en">
   <head>
 <!DOCTYPE html>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
     <title>OpenAgency s.r.o.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +43,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .navbar-default {
@@ -154,7 +155,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
+    /*border-radius: 4px;*/
   }
 
   /* Bump up size of carousel content */
@@ -174,7 +175,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     <div class="container">
       <div class="navbar navbar-default navbar-static-top">
         <div class="navbar-header">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -210,12 +211,18 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
           <ul class="nav navbar-nav pull-right">
             <li>
               <a href="https://www.facebook.com/openagency.cz">
-                <i class="fa fa-facebook"></i> openagency.cz
+                <span class="visible-lg">
+                  <i class="fa fa-facebook"></i> openagency.cz
+                </span>
+                <i class="fa fa-facebook hidden-lg" data-toggle="tooltip" data-placement="bottom" title="openagency.cz na Facebooku"></i>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/openagency_cz">
-                <i class="fa fa-twitter"></i> openagency_cz
+                <span class="visible-lg">
+                  <i class="fa fa-twitter"></i> openagency_cz
+                </span>
+                <i class="fa fa-twitter hidden-lg" data-toggle="tooltip" data-placement="bottom" title="openagency_cz na Twitteru"></i>
               </a>
             </li>
           </ul>
@@ -284,9 +291,16 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 <div class="container marketing">
 
   <!-- Three columns of text below the carousel -->
-
+  
   <div class="row">
-    <div class="col-md-8 text-center">
+    <div class="col-md-8">
+
+      <div class="page-header" style="margin-top: 0px;">
+        <h3 id="produkty">
+          <i class="fa fa-th-list"></i> Produkty
+        </h3>
+      </div>
+
       <div class="row">
         <div class="col-md-4 text-center">
           <img class="img-circle" src="static/img/en_obch.jpg">
@@ -365,31 +379,71 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       <!-- Co je openlearning -->
       <div class="row">
         <div id="openlearning" class="col-md-12">
-          <h4><i class="fa fa-arrow-circle-right"></i> Co je Open Learning?</h4>
-          <div class="well">
+          <h4><i class="fa fa-arrow-circle-right"></i> Co je OPEN LEARNING?</h4>
 
-            <p><strong>OPEN LEARNING</strong> umožňuje efektivnější učení a kontrolu průběhu učení.
-              Průběžné hodnocení výsledků učení zobrazené v online pracovním sešitu okamžitě motivuje studenty k zodpovědnosti za výsledky učení.
-            </p>
-
-            <p>Systém umožňuje integrovat výuku předmětu a cizího jazyka a vytvářet podmínky pro osvojení odborné terminologie předmětu v cizím i českém jazyce v souladu s pokynem MŠMT č.j. 527/2008-23 (CLIL - Content and Language Integrated Learning).
-            </p>
-
-            <p>Webová aplikace je navržena moderní technologií pro školy a vzdělávací centra od 1 do 100 počítačů zapojených v síti. Aplikace je velmi intuitivní a klade minimální nároky na školení uživatelů.
-            </p>
-          </div>
-          <div class="well">
-
-            <p><strong>OPEN LEARNING</strong> je výhradně vyučován certifikovanými lektory a certifikovanými učiteli. Doporučená doba ke zvládnutí deseti lekcí je 10-12 týdnů, což představuje 40 hodin výuky nebo online učení.
-              Kontaktní výuka probíhá s certifikovaným učitelem nebo certifikovaným lektorem zpravidla 4 hodiny týdně. Je doplněna samostudiem s využitím online pracovního sešitu a individuálních konzultací. Online učení probíhá v době a místě, které vyhovuje studentovi.
-            </p>
-
-            <p><strong>OPEN LEARNING</strong> umožňuje efektivnější učení a kontrolu průběhu učení. Průběžné hodnocení výsledků učení zobrazené v online pracovním sešitu okamžitě motivuje studenty k zodpovědnosti za výsledky učení.
-            </p>
-
-            <p><strong>OPEN LEARNING</strong> umožňuje integrovat výuku předmětu a cizího jazyka a vytvářet podmínky pro osvojení odborné terminologie předmětu v cizím i českém jazyce v souladu s Výnosem č. 9/2013 MŠMT pro vydávání rozhodnutí o povolení výuky některých předmětů v cizím jazyce pro základní a střední školy, který nabyl účinnosti dnem 1. ledna 2014, Č.j. :MSMT-46350/2013. (CLIL - Content and Language Integrated Learning).
-            </p>
-          </div>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Definice
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  V nejširším významu je OPEN LEARNING praktický vzdělávací koncept, certifikační program v oblasti přípravy lektorů a učitelů odborných cizích jazyků a ověřování výsledků jazykového vzdělávání.<br/>
+                  <br/>    
+                  OPEN LEARNING je prostředí a metodický nástroj pro vytváření a zpřístupnění digitálního vzdělávacího obsahu online i offline. Webová aplikace je navržena moderní technologií pro školy a vzdělávací centra od 1 do 100 zařízení zapojených v síti. Aplikace je velmi intuitivní a klade minimální nároky na školení uživatelů.<br/>
+                  <br/>
+                  Výukový soubor OPEN LEARNING je vždy vytvářen ve spolupráci s odborníky z praxe, poskytuje procvičování odborné terminologie, testování, poslechy audio nahrávek a videonahrávek z prostředí podniků, odkazy na další zdroje informací atd.<br/>
+                  <br/>
+                  Výukový soubor tvoří učebnice, online pracovní sešit a příručka pro lektory.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Výuka s OPEN LEARNING
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <strong>OPEN LEARNING</strong> je výhradně vyučován certifikovanými lektory a certifikovanými učiteli. Doporučená doba ke zvládnutí deseti lekcí je 10-12 týdnů, což představuje 40 hodin výuky nebo online učení.
+                  Kontaktní výuka probíhá s certifikovaným učitelem nebo certifikovaným lektorem zpravidla 4 hodiny týdně. Je doplněna samostudiem s využitím online pracovního sešitu a individuálních konzultací. Online učení probíhá v době a místě, které vyhovuje studentovi.<br/>
+                  <br/>
+                  OPEN LEARNING umožňuje efektivnější učení a kontrolu průběhu učení. Průběžné hodnocení výsledků učení zobrazené v online pracovním sešitu okamžitě motivuje studenty k zodpovědnosti za výsledky učení.<br/>
+                  <br/>
+                  OPEN LEARNING umožňuje integrovat výuku předmětu a cizího jazyka a vytvářet podmínky pro osvojení odborné terminologie předmětu v cizím i českém jazyce v souladu s Výnosem č. 9/2013 MŠMT pro vydávání rozhodnutí o povolení výuky některých předmětů v cizím jazyce pro základní a střední školy, který nabyl účinnosti dnem 1. ledna 2014, Č.j. :MSMT-46350/2013. (CLIL - Content and Language Integrated Learning).<br/>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    OPEN LEARNING ve školách
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <li>Angličtina pro chemiky pro obor 28 – <i>Technická chemie a chemie silikátů</i></li>
+                  <li>Angličtina pro strojaře pro obor 23 – <i>Strojírenství a strojírenská výroba</i></li>
+                  <li>Angličtina pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li>
+                  <li>Angličtina pro cestovní ruch pro obory 65 – <i>Gastronomie, hotelnictví, turismus, 63 – Ekonomika a administrativa, 66 – Obchod</i></li>
+                  <li>Němčina pro strojaře pro obor 23 – <i>Strojírenství a strojírenská výroba</i></li>
+                  <li>Němčina pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li>
+                  <li>Němčina pro cestovní ruch pro obory 65 – <i>Gastronomie, hotelnictví, turismus, 63 – Ekonomika a administrativa, 66 – Obchod</i></li>
+                  <li>Ruština pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li></br>
+                  Tyto vzdělávací programy jsou zpracovány specialisty na výuky cizích jazyků, rodilými mluvčími a odborníky z praxe - především z nadnárodních společností.
+                </div>
+              </div>
+            </div>
+          </div>         
         </div>
       </div>
     </div>    
@@ -401,7 +455,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 
   <div id="provazanost-s-praxi" class="featurette">
     <img class="featurette-image img-circle pull-right" src="static/img/provazanost-s-praxi.png">
-    <h2 class="featurette-heading">Provázanost s praxí <span class="text-muted">vychází vstříc podnikům.</span></h2>
+    <h2 class="featurette-heading">Provázanost s praxí. <span class="text-muted">Vycházíme vstříc podnikům.</span></h2>
     <p class="lead">
       <i class="fa fa-hand-o-right"></i> ústní a písemné úkoly vycházející z reálných potřeb praxe<br/>
       <i class="fa fa-hand-o-right"></i> videonahrávky vytvořené v prostředí podniků v každé lekci
@@ -412,7 +466,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 
   <div id="online-pracovni-sesit" class="featurette">
     <img class="featurette-image img-circle pull-left" src="static/img/online-pracovni-sesit.png">
-    <h2 class="featurette-heading">Online pracovní sešit <span class="text-muted">poskytuje zpětnou vazbu.</span></h2>
+    <h2 class="featurette-heading">Online pracovní sešit <span class="text-muted">poskytuje okamžitou zpětnou vazbu.</span></h2>
     <p class="lead">
       <i class="fa fa-hand-o-right"></i> okamžité vyhodnocení cvičení a testů v online pracovním sešitě<br/>
       <i class="fa fa-hand-o-right"></i> přehlednost a dostupnost výsledků pro studenta i jeho lektora
@@ -434,7 +488,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   <hr class="featurette-divider">
   
 <!-- START THE TEAM -->
- <div class="page-header">
+  <div class="page-header">
     <h2 id="team">
       <i class="fa fa-users"></i> Náš tým
     </h2>
@@ -570,18 +624,18 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
         <ul class="list-unstyled">
           <li>OPEN AGENCY<li>
           <li><a href="#team">O nás</a></li>
-          <li><a href="https://www.youtube.com/watch?v=IB-H4-Oayvk&feature=youtu.be">Co děláme?</a></li>
+          <li><a href="https://www.youtube.com/watch?v=IB-H4-Oayvk&amp;feature=youtu.be">Co děláme?</a></li>
           <li><a href="./contact.html">Kontakt & podpora</a></li>
           <li><a href="#">Enterprise</a></li>
-          <li><a href="#">Site status</a></li>
+          <li><a href="https://github.com/openagency/openagency.github.io/issues">Našli jste chybu?</a></li>
         </ul>
       </div>
       <div class="col-md-3">
         <ul class="list-unstyled">
-          <li>Applications<li>
+          <li>Sociální sítě<li>
           <li><a href="https://www.facebook.com/openagency.cz">Facebook opengency.cz</a></li>
           <li><a href="https://twitter.com/openagency_cz">Twitter openagency_cz</a></li>
-          <li><a href="http://kurzy.openlearning.cz/users/login">Vstup do demoverze</a></li>              
+          <li><a href="https://www.linkedin.com/company/open-agency-s-r-o-?trk=nmp_rec_act_company_name">LinkedIn Open Agency</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -589,7 +643,9 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
           <li>Services<li>
           <li><a href="#">Služby školám</a></li>
           <li><a href="#">Naši partneři</a></li>
-          <li><a href="static/cenik2014.pdf">Ceník</a></li>             
+          <li><a href="http://kurzy.openlearning.cz/users/login">Vstup do demoverze</a></li> 
+          <li><a href="https://www.dropbox.com/s/wcqgdf9qx0vo6ac/objednavkovy-formular.xlsx">Objednávkový formulář</a></li>
+          <li><a href="static/cenik2014.pdf">Ceník</a></li>            
         </ul>
       </div>
       <div class="col-md-3">
@@ -625,7 +681,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type='text/javascript'>
       $(document).ready(function() {
-        //alert('Done');    
+        $('[data-toggle="tooltip"]').tooltip()    
       });
     </script>
     <script type="text/javascript">
