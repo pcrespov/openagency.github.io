@@ -175,9 +175,11 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.6)!important;
 }
 
-/*
-.filter-courses > div { height: 400px; overflow: hidden;}
-*/
+.filter-courses .panel-body {
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+}
   </style>
 </head>
 <body>
@@ -311,17 +313,17 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
           <i class="fa fa-th-list"></i> Produkty
           <!-- Language filter -->
           <div class="btn-group pull-right" data-toggle="buttons">
-            <label class="btn">
+            <label class="btn" data-toggle="tooltip" data-placement="bottom" title="vyberte jazyk">
               <input name="courses" value=".english" type="checkbox">
-              <i class="fa fa-check-circle-o"></i> Angličtina
+              Angličtina
             </label>
-            <label class="btn">
+            <label class="btn" data-toggle="tooltip" data-placement="bottom" title="vyberte jazyk">
               <input name="courses" value=".german" type="checkbox">
-              <i class="fa fa-check-circle-o"></i> Němčina
+              Němčina
             </label>
-            <label class="btn">
+            <label class="btn" data-toggle="tooltip" data-placement="bottom" title="vyberte jazyk">
               <input name="courses" value=".russian" type="checkbox">
-              <i class="fa fa-check-circle-o"></i> Ruština
+              Ruština
             </label>
           </div>
         </h3>
@@ -329,62 +331,134 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 
       <div class="row filter-courses">
         <div class="col-md-4 text-center english">
-          <img class="img-circle" src="static/img/en_obch.jpg">
-          <h3>Angličtina pro obchodníky</h3>
-          <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Přihlášení »</a></p>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img class="img-circle" src="static/img/en_obch.jpg">
+              <h3>Angličtina pro obchodníky</h3>
+            </div>
+            <div class="panel-body text-center">
+              <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.anglictinaproobchodniky.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center english">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/en_ruch.jpg">
           <h3>Angličtina pro cestovní ruch</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny pro podnikatele a zaměstnance, kteří poskytují služby zahraničním turistům a návštěvníkům v hotelích, restauracích, informačních, sportovních a zábavních centrech, muzeích a dopravě.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Přihlášení »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.anglictinaprocestovniruch.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center german">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/de_st.jpg">
           <h3>Němčina pro strojaře</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny pro konstruktéry, technology, mechaniky, kontrolory kvality, mistry, nástrojáře, projektanty, strojní inženýry, svářečský dozor, manažery ve strojírenské výrobě. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.nemcinaprostrojare.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="col-md-4 text-center russian">
-          <img class="img-circle" src="static/img/ru_obch.jpg">
-          <h3>Ruština pro obchodníky</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img class="img-circle" src="static/img/ru_obch.jpg">
+              <h3>Ruština pro obchodníky</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.rustinaproobchodniky.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center german">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/de_obch.jpg">
           <h3>Němčina pro obchodníky</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.nemcinaproobchodniky.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center english">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/en_st.jpg">
           <h3>Angličtina pro strojaře</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny pro konstruktéry, technology, mechaniky, kontrolory kvality, mistry, nástrojáře, projektanty, strojní inženýry, svářečský dozor, manažery ve strojírenské výrobě. Kurz je vhodný jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.anglictinaprostrojare.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="col-md-4 text-center english">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/en_chem.jpg">
           <h3>Angličtina pro chemii</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Prihlaseni »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.anglictinaprochemii.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center german">
+          <div class="panel panel-default">
+            <div class="panel-heading">
           <img class="img-circle" src="static/img/de_ruch.jpg">
           <h3>Němčina pro cestovní ruch</h3>
+            </div>
+            <div class="panel-body text-center">
           <p>Kurzy jsou určeny pro podnikatele a zaměstnance, kteří poskytují služby zahraničním turistům a návštěvníkům v hotelích, restauracích, informačních, sportovních a zábavních centrech, muzeích a dopravě.</p>
-          <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
-          <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-block btn-default" href="http://kurzy.nemcinaprocestovniruch.cz">
+                <i class="fa fa-lock"></i> Přihlášení »
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
