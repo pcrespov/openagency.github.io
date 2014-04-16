@@ -171,6 +171,13 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: white!important;
 }
 
+.font-inverse .text-muted, body .font-inverse .text-muted {
+  color: rgba(255, 255, 255, 0.6)!important;
+}
+
+/*
+.filter-courses > div { height: 400px; overflow: hidden;}
+*/
   </style>
 </head>
 <body>
@@ -302,66 +309,77 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       <div class="page-header" style="margin-top: 0px;">
         <h3 id="produkty">
           <i class="fa fa-th-list"></i> Produkty
+          <!-- Language filter -->
+          <div class="btn-group pull-right" data-toggle="buttons">
+            <label class="btn">
+              <input name="courses" value=".english" type="checkbox">
+              <i class="fa fa-check-circle-o"></i> Angličtina
+            </label>
+            <label class="btn">
+              <input name="courses" value=".german" type="checkbox">
+              <i class="fa fa-check-circle-o"></i> Němčina
+            </label>
+            <label class="btn">
+              <input name="courses" value=".russian" type="checkbox">
+              <i class="fa fa-check-circle-o"></i> Ruština
+            </label>
+          </div>
         </h3>
       </div>
 
-      <div class="row">
-        <div class="col-md-4 text-center">
+      <div class="row filter-courses">
+        <div class="col-md-4 text-center english">
           <img class="img-circle" src="static/img/en_obch.jpg">
           <h3>Angličtina pro obchodníky</h3>
           <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Přihlášení »</a></p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center english">
           <img class="img-circle" src="static/img/en_ruch.jpg">
           <h3>Angličtina pro cestovní ruch</h3>
           <p>Kurzy jsou určeny pro podnikatele a zaměstnance, kteří poskytují služby zahraničním turistům a návštěvníkům v hotelích, restauracích, informačních, sportovních a zábavních centrech, muzeích a dopravě.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Přihlášení »</a></p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center german">
           <img class="img-circle" src="static/img/de_st.jpg">
           <h3>Němčina pro strojaře</h3>
           <p>Kurzy jsou určeny pro konstruktéry, technology, mechaniky, kontrolory kvality, mistry, nástrojáře, projektanty, strojní inženýry, svářečský dozor, manažery ve strojírenské výrobě. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center russian">
           <img class="img-circle" src="static/img/ru_obch.jpg">
           <h3>Ruština pro obchodníky</h3>
           <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center german">
           <img class="img-circle" src="static/img/de_obch.jpg">
           <h3>Němčina pro obchodníky</h3>
           <p>Kurzy jsou určeny obchodním zástupcům, prodejcům a obchodníkům pro zahraniční trh, asistentům nákupu, obchodně provozním pracovníkům a manažerům ve výrobních podnicích. Jsou vhodné jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center english">
           <img class="img-circle" src="static/img/en_st.jpg">
           <h3>Angličtina pro strojaře</h3>
           <p>Kurzy jsou určeny pro konstruktéry, technology, mechaniky, kontrolory kvality, mistry, nástrojáře, projektanty, strojní inženýry, svářečský dozor, manažery ve strojírenské výrobě. Kurz je vhodný jak pro zkušené pracovníky, tak pro studenty připravující se na tyto pozice.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="#">Přihlášení »</a></p>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center english">
           <img class="img-circle" src="static/img/en_chem.jpg">
           <h3>Angličtina pro chemii</h3>
           <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
           <p><a class="btn btn-info" href="#">Více o kurzu »</a></p>
           <p><a class="btn btn-default" href="http://kurzy.anglictinaprostrojare.cz">Prihlaseni »</a></p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center german">
           <img class="img-circle" src="static/img/de_ruch.jpg">
           <h3>Němčina pro cestovní ruch</h3>
           <p>Kurzy jsou určeny pro podnikatele a zaměstnance, kteří poskytují služby zahraničním turistům a návštěvníkům v hotelích, restauracích, informačních, sportovních a zábavních centrech, muzeích a dopravě.</p>
@@ -435,6 +453,7 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
               </div>
               <div id="openlearning-skoly-panel" class="panel-collapse collapse">
                 <div class="panel-body">
+                  <ul>
                   <li>Angličtina pro chemiky pro obor 28 – <i>Technická chemie a chemie silikátů</i></li>
                   <li>Angličtina pro strojaře pro obor 23 – <i>Strojírenství a strojírenská výroba</i></li>
                   <li>Angličtina pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li>
@@ -442,7 +461,8 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
                   <li>Němčina pro strojaře pro obor 23 – <i>Strojírenství a strojírenská výroba</i></li>
                   <li>Němčina pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li>
                   <li>Němčina pro cestovní ruch pro obory 65 – <i>Gastronomie, hotelnictví, turismus, 63 – Ekonomika a administrativa, 66 – Obchod</i></li>
-                  <li>Ruština pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li></br>
+                  <li>Ruština pro obchodníky pro obory 63 – <i>Ekonomika a administrativa, 66 – Obchod, 23 – Strojírenství a strojírenská výroba</i></li>
+                  </ul>
                   Tyto vzdělávací programy jsou zpracovány specialisty na výuky cizích jazyků, rodilými mluvčími a odborníky z praxe - především z nadnárodních společností.
                 </div>
               </div>
@@ -733,8 +753,9 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       <div class="col-md-3">
         <ul class="list-unstyled">
           <li>OPEN LEARNING NEWS<li>
-          <li><a href="https://www.dropbox.com/s/fu9gcnya7yw5owq/NEWSLETTER1.pdf">NEWS 2014/1</a></li>
+          <!-- newest first -->
           <li><a href="https://www.dropbox.com/s/5l502yu7e8ymu5c/NEWSLETTER2.pdf">NEWS 2014/2</a></li>
+          <li><a href="https://www.dropbox.com/s/fu9gcnya7yw5owq/NEWSLETTER1.pdf">NEWS 2014/1</a></li>
         </ul>
       </div>
     </div>
@@ -763,6 +784,21 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type='text/javascript'>
       $(document).ready(function() {
+        $('input[name="courses"]').change(function() {
+          if ($('input[name="courses"]:checked').length > 0) {
+              $('.filter-courses').children().hide()
+              $('input[name="courses"]:checked').val(function(i, elem) {
+                $('.filter-courses').children(elem).show()
+                return elem
+              })
+            } else {
+              $('input[name="courses"]').val(function(i, elem) {
+                $('.filter-courses').children(elem).show()
+                return elem
+              })
+            }
+        })
+
         $('[data-toggle="tooltip"]').tooltip()
 
         // This function opens panel when location hash has changed.
