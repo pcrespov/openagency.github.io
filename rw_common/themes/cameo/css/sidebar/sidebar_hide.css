@@ -1,0 +1,11 @@
+#sidebarContainer {
+	display: none;
+}
+
+#contentContainer {
+	clear: left;
+}
+
+#navcontainer {
+	float: left;
+}

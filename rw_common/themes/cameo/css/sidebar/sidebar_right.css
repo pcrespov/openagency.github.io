@@ -1,0 +1,13 @@
+/* default float side for sidebar */
+#sidebarContainer {
+	float: right;
+}
+
+#contentContainer {
+	margin-right: 235px;
+	clear: left;
+}
+
+#navcontainer {
+	float: left;
+}

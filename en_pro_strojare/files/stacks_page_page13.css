@@ -1,0 +1,167 @@
+
+#stacks_in_16_page13 {
+	margin: 10px 30px 0px 30px;
+	padding: 20px 0px 0px 0px;
+}
+
+#stacks_in_403_page13 {
+	margin: 10px 30px 0px 30px;
+	padding: 20px 0px 0px 0px;
+}
+#stacks_in_405_page13_button {
+	display:block;
+	position: relative;
+	text-align: center;
+}
+
+
+#stacks_in_405_page13 a:link, #stacks_in_405_page13 a:visited {
+	 display:inline-block; 
+	
+	
+	position: relative;
+	text-decoration:none;
+}
+#stacks_in_405_page13 a:hover, #stacks_in_405_page13 a:active {
+	color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+#stacks_in_405_page13 a:link, #stacks_in_405_page13 a:visited {
+	background-color:#4E4E4E;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4E4E4E), to(#2F2F2F));
+	border:1px solid #2F2F2F;
+	padding:3px 20px;
+	color:#FFFFFF;
+	box-shadow:rgba(0, 0, 0, 0.5) 0px 1px 2px;
+	margin:5px;
+	font-weight:bold;
+}
+#stacks_in_405_page13 a:hover {
+	background-color:#555555;
+	background: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#282828));
+	box-shadow:rgba(0, 0, 0, 0.25) 0px 2px 4px;
+}
+#stacks_in_405_page13 a:active {
+	background-color:#4E4E4E;
+	box-shadow:rgba(0, 0, 0, 0.75) 0px 0px 4px inset;
+}
+
+#stacks_out_405_page13 {
+	width: 25%;
+	margin-left:0;
+}
+
+#stacks_in_405_page13 {
+	margin: 20px 0px 15px 30px;
+}
+
+#stacks_in_112_page13 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_112_page13 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_112_page13 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_117_page13 {
+	text-transform: capitalize;
+}
+
+#stacks_in_116_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_119_page13 {
+	font-size: 95%;
+}
+
+#stacks_in_118_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_114_page13 {
+	padding: 5px 10px 5px 10px;
+}
+
+#stacks_in_126_page13 {
+	text-transform: capitalize;
+}
+
+#stacks_in_125_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_131_page13 {
+	font-size: 95%;
+}
+
+#stacks_in_127_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_121_page13 {
+	padding: 5px 10px 5px 10px;
+}
+
+#stacks_in_136_page13 {
+	text-transform: capitalize;
+}
+
+#stacks_in_135_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_147_page13 {
+	font-size: 95%;
+}
+
+#stacks_in_146_page13 {
+	border: solid #999999;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#stacks_in_133_page13 {
+	padding: 5px 10px 5px 10px;
+}
+
+#stacks_in_112_page13 {
+	border: solid #999999;
+	border-width: 3px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+#stacks_in_107_page13 {
+	margin: 0px 30px 0px 30px;
+}
+
+#stacks_out_54_page13 {
+	margin-left:0;
+}
