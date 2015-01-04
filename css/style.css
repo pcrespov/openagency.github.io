@@ -35,10 +35,6 @@ p {
     line-height: 1.6em;
 }
 
-p.lead {
-	font-weight: 600;
-}
-
 .sentence {
   font-size: 19px;
   font-style: italic; 
