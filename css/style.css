@@ -1024,6 +1024,10 @@ hr {
    background: url(../img/team/julietta-ayrapetyan-open-agency.jpg);
    background-size:contain;
 }
+.skrontova { 
+   background: url(../img/team/veronika-skrontova-open-agency.jpg);
+   background-size:contain;
+}
 
 .avatar-overlay:hover {
   background: url(../img/grey.jpg);
