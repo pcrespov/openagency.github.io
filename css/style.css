@@ -1008,6 +1008,10 @@ hr {
    background: url(../img/team/slaninova-katka-open-agency.jpg);
    background-size:contain;
 }
+.feidl { 
+   background: url(../img/team/kamil-feidl-open-agency.jpg);
+   background-size:contain;
+}
 .zdenek-kuncar { 
    background: url(../img/team/zdenek-kuncar-open-agency.jpg);
    background-size:contain;
@@ -1026,6 +1030,11 @@ hr {
 }
 .skrontova { 
    background: url(../img/team/veronika-skrontova-open-agency.jpg);
+   background-size:contain;
+}
+
+.kunzova { 
+   background: url(../img/team/monika-kunzova-open-agency.jpg);
    background-size:contain;
 }
 
