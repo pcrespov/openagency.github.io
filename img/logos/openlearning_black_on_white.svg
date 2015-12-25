@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="415px" height="75px" viewBox="0 0 415 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="13.7915294%" id="linearGradient-1">
+            <stop stop-color="#4FBBDD" offset="0%"></stop>
+            <stop stop-color="#2077AD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.6670206%" y1="0%" x2="53.6670208%" y2="84.0158233%" id="linearGradient-2">
+            <stop stop-color="#A9D500" offset="0%"></stop>
+            <stop stop-color="#3E9B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <g id="blue-base" sketch:type="MSLayerGroup" transform="translate(2.900000, -20.500000)" stroke="url(#linearGradient-1)" stroke-width="7">
+                <circle id="smaller" sketch:type="MSShapeGroup" cx="38.6" cy="38.9" r="25"></circle>
+                <circle id="bigger" sketch:type="MSShapeGroup" cx="38.6" cy="38.9" r="38"></circle>
+            </g>
+            <g id="green-base" sketch:type="MSLayerGroup" transform="translate(2.900000, 19.000000)" stroke="url(#linearGradient-2)" stroke-width="7">
+                <circle id="smaller" sketch:type="MSShapeGroup" cx="38.6" cy="38.9" r="25"></circle>
+                <circle id="bigger" sketch:type="MSShapeGroup" cx="38.6" cy="38.9" r="38"></circle>
+            </g>
+            <g id="blue-int-1" sketch:type="MSLayerGroup" transform="translate(4.900000, 30.500000)" fill="#2A8B00">
+                <path d="M51.6878712,12.0831365 C53.6874429,10.8329641 55.5208062,9.34168157 57.14725,7.65 L57.14725,7.65 C55.5208062,5.95831843 53.6874429,4.46703588 51.6878712,3.21686347 C49.8024268,5.07429441 47.5756608,6.58621767 45.1102064,7.65 C47.5756608,8.71378233 49.8024268,10.2257056 51.6878712,12.0831365 Z M21.5121288,12.0831365 C19.5125571,10.8329641 17.6791938,9.34168157 16.05275,7.65 C17.6791938,5.95831843 19.5125571,4.46703588 21.5121288,3.21686347 C23.3975732,5.07429441 25.6243392,6.58621767 28.0897936,7.65 C25.6243392,8.71378233 23.3975732,10.2257056 21.5121288,12.0831365 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M68.5576198,14.3773815 C70.2836067,12.296479 71.8102284,10.0442552 73.1081947,7.65 L73.1081947,7.65 C71.8102284,5.25574484 70.2836067,3.00352098 68.5576198,0.922618501 C67.5836135,3.31039656 66.3497743,5.56456616 64.8912293,7.65 C66.3497743,9.73543384 67.5836135,11.9896034 68.5576198,14.3773815 Z M4.64238022,14.3773815 C2.91639328,12.296479 1.38977162,10.0442552 0.0918053016,7.65 C1.38977162,5.25574484 2.91639328,3.00352098 4.64238022,0.922618501 C5.61638645,3.31039656 6.85022571,5.56456616 8.30877071,7.65 C6.85022571,9.73543384 5.61638645,11.9896034 4.64238022,14.3773815 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="green-int-1" sketch:type="MSLayerGroup" transform="translate(12.900000, 29.000000)"></g>
+            <g id="blue-int-2" sketch:type="MSLayerGroup" transform="translate(13.900000, 21.500000)" fill="#2A8B00">
+                <path d="M51.8576441,11.8680425 C53.1445839,9.78681961 54.1711658,7.52759608 54.8919376,5.13582419 L54.8919376,5.13582419 C52.994338,3.47795255 50.9444393,1.99004172 48.7659813,0.695832448 C48.3369519,3.10428919 47.5069055,5.37395408 46.3473534,7.43331582 C48.3344834,8.72203871 50.1806485,10.2096826 51.8576441,11.8680425 Z M3.34235594,11.8680425 C2.05541614,9.78681961 1.02883421,7.52759608 0.308062449,5.13582419 C2.20566199,3.47795255 4.25556067,1.99004172 6.43401637,0.695833812 C6.86304631,3.10429024 7.69309314,5.3739549 8.85264557,7.43331646 C6.865516,8.72203921 5.01935118,10.2096828 3.34235594,11.8680425 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M48.7659813,32.6041676 C50.9444379,31.3099593 52.9943373,29.822048 54.8919376,28.1641758 L54.8919376,28.1641758 C54.1711658,25.7724039 53.1445839,23.5131804 51.8576441,21.4319575 C50.1806485,23.0903174 48.3344834,24.5779613 46.3473534,25.8666842 C47.5069055,27.9260459 48.3369519,30.1957108 48.7659813,32.6041676 Z M6.43401866,32.6041676 C4.25556211,31.3099593 2.20566266,29.822048 0.308062449,28.1641758 C1.02883421,25.7724039 2.05541614,23.5131804 3.34235594,21.4319575 C5.01935145,23.0903174 6.86551661,24.5779613 8.85264656,25.8666842 C7.69309446,27.9260459 6.86304805,30.1957108 6.43401866,32.6041676 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="green-int-2" sketch:type="MSLayerGroup" transform="translate(12.900000, 29.000000)"></g>
+            <text id="OPEN-LEARNING" sketch:type="MSTextLayer" font-family="Roboto" font-size="41" font-weight="normal" letter-spacing="1.02499998" fill="#000000">
+                <tspan x="87" y="52">OPEN LEARNIN</tspan>
+                <tspan x="382.996777" y="52" letter-spacing="1.05062497">G</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
