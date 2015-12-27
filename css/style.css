@@ -117,13 +117,11 @@ a:focus {
 }
 
 .introvideo {
-
- color:#ccc!important;
+ color:#fff!important;
 }
 
 .introvideo:hover {
-
-  color:#fff!important;
+  opacity:.8;
 }
 
 #videoModal .modal-content{
@@ -599,12 +597,9 @@ textarea {
   margin-bottom: 0;
 }
 
-
-
-
 .logo {
   float:left;
-  width:40px;
+  height: 100%;
   margin-right:10px;
   margin-top: 3px;
 }
@@ -867,10 +862,13 @@ hr {
 ============================ */
 
 .intro {
-	width:100%;
-	position:relative;
-	background: url(../img/bg1.jpg) no-repeat top center;
-  background-size:cover;
+  width: 100%;
+  position: relative;
+  background-image: -webkit-linear-gradient(left,#01acfb 0,#00e959 100%);
+  background-image: -o-linear-gradient(left,#01acfb 0,#00e959 100%);
+  background-image: linear-gradient(to right,#01acfb 0,#00e959 100%);
+  background-repeat: repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF01ACFB', endColorstr='#FF00E959', GradientType=1);
 }
 
 #intro.intro {
@@ -900,7 +898,6 @@ hr {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
-	font-family: Montserrat, sans-serif;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
 	text-transform: uppercase;
