@@ -11,6 +11,11 @@
             "link": "http://kurzy.anglictinaprochemii.cz/"
         },
         {
+            "nazev": "Angličtina pro matematiku",
+            "vlajka": "img/flags/en_math.jpg",
+            "link": "http://kurzy.openlearning.cz/"
+        },
+        {
             "nazev": "Angličtina pro obchodníky",
             "vlajka": "img/flags/en_obch.jpg",
             "link": "http://kurzy.anglictinaproobchodniky.cz/"
@@ -191,6 +196,16 @@
             "autor": "Mgr. Simona Martinková",
             "odkaz": "http://kurzy.anglictinaprochemii.cz",
             "popis": "<ul><li>Vybavení laboratoře I</li><li>Směsi</li><li>Vybavení laboratoře II</li><li>Nekovy, polokovy</li><li>Kovy</li><li>Chemické názvosloví I</li><li>Metody oddělování složek směsí</li><li>Chemické názvosloví II</li><li>Chemické reakce</li><li>Roztoky</li></ul>"
+        }
+        {
+            "id": "16",
+            "nazev": "Základní matematická terminologie",
+            "nazevCizi": "Basic Mathematical Terminology",
+            "kategorie": "materialy",
+            "ikona": "img/flags/en_math.jpg",
+            "autor": "Mgr. Zdeňka Vojtáková",
+            "odkaz": "http://kurzy.openlearning.cz",
+            "popis": "<ul><li>Čísla a číslice</li><li>Základní výpočty v aritmetice</li><li>Zlomky, desetinná čísla a procenta</li><li>Geometrie v rovině</li><li>Geometrická tělesa a rýsování</li></ul>"
         }
     ],
     "sluzby": [
